@@ -1,0 +1,15 @@
+.stack-work/
+*~
+.hie/
+elm-stuff/
+node_modules/
+app.js
+backup/
+package-lock.json
+*.zip
+*.tar
+*.dhall
+.#*
+dist/
+dist-newstyle/
+result
