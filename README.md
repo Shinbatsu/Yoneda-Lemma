@@ -52,9 +52,9 @@ where $\mathrm{Nat}$ denotes the set of natural transformations between the func
   $$
 - Show $\Psi(\Phi(\alpha)) = \alpha$ for $\alpha: \mathcal{C}(A, -) \to F$:
   For any $X$ and $f \in \mathcal{C}(A, X)$,
-  $$
+```math
   \Psi(\Phi(\alpha))_X(f) = F(f)(\alpha_A(\mathrm{id}_A)) = \alpha_X(f \circ \mathrm{id}_A) = \alpha_X(f).
-  $$
+```
 
 ---
 
