@@ -20,9 +20,7 @@ Let:
 - $A \in \mathcal{C}$ be an object.
 
 **Yoneda Lemma**: There is a bijection, natural in both $A$ and $F$:
-$$
 \mathrm{Nat}(\mathcal{C}(A, -), F) \cong F(A),
-$$
 where $\mathrm{Nat}$ denotes the set of natural transformations between the functors.
 
 ---
