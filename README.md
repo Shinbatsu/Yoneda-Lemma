@@ -8,7 +8,7 @@ The Yoneda Lemma is a fundamental result in category theory, establishing a deep
 
 - **Categories**: A category $`\mathcal{C}`$ consists of objects and morphisms (arrows) satisfying composition and identity laws.
 - **Functors**: A functor $`F: \mathcal{C} \to \mathbf{Set}`$ maps objects of $\mathcal{C}$ to sets and morphisms to functions.
-- **Hom-Functor**: For a fixed object $`A \in \mathcal{C}$, the hom-functor `$ $`  \mathcal{C}(A, -): \mathcal{C} \to \mathbf{Set} `$ sends an object $X$ to the set of morphisms $` \mathcal{C}(A, X) `$.
+- **Hom-Functor**: For a fixed object $`A \in \mathcal{C}`$, the hom-functor $`\mathcal{C}(A, -): \mathcal{C} \to \mathbf{Set} `$ sends an object $X$ to the set of morphisms $` \mathcal{C}(A, X) `$.
 
 ---
 
@@ -32,10 +32,9 @@ where $`\mathrm{Nat}`$ denotes the set of natural transformations between the fu
 ### Step 1: Define the Bijection
 - Given a natural transformation $` \alpha: \mathcal{C}(A, -) \to F`$, define $`\Phi(\alpha) = \alpha_A(\mathrm{id}_A) \in F(A)`$.
 - Conversely, given $`u \in F(A)`$, define $`\Psi(u): \mathcal{C}(A, -) \to F`$ by:
-
-  ```math
-    \Psi(u)_X(f) = F(f)(u) \quad \text{for } f \in \mathcal{C}(A, X).
-  ```
+```math
+  \Psi(u)_X(f) = F(f)(u) \quad \text{for } f \in \mathcal{C}(A, X).
+```
   
 ### Step 2: Verify Naturality
 - Check that $`\Psi(u)`$ is a natural transformation:
@@ -49,7 +48,7 @@ where $`\mathrm{Nat}`$ denotes the set of natural transformations between the fu
 ```
 
 ### Step 3: Prove $\Phi$ and $\Psi$ are Inverses
-- Show $`\Phi(\Psi(u)) = u$ for $u \in F(A)`$:
+- Show $`\Phi(\Psi(u)) = u`$ for $`u \in F(A)`$:
 ```math
   \Phi(\Psi(u)) = \Psi(u)_A(\mathrm{id}_A) = F(\mathrm{id}_A)(u) = u.
 ```
