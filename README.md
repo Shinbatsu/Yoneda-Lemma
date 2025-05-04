@@ -32,8 +32,9 @@ where $`\mathrm{Nat}`$ denotes the set of natural transformations between the fu
 ### Step 1: Define the Bijection
 - Given a natural transformation $` \alpha: \mathcal{C}(A, -) \to F`$, define $`\Phi(\alpha) = \alpha_A(\mathrm{id}_A) \in F(A)`$.
 - Conversely, given $`u \in F(A)`$, define $`\Psi(u): \mathcal{C}(A, -) \to F`$ by:
+
   ```math
-  \Psi(u)_X(f) = F(f)(u) \quad \text{for } f \in \mathcal{C}(A, X).
+    \Psi(u)_X(f) = F(f)(u) \quad \text{for } f \in \mathcal{C}(A, X).
   ```
   
 ### Step 2: Verify Naturality
